@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Student Login Form</title>
 </head>
 <body>
-    
+    <div class="header-section">
+        <!-- ye back button hai --> <a href="./index.html">
+            <img src="./arrow icon.jpg" alt="">  </a>          
+        <div class="logo-container" >
+            <!-- SMIT logo  -->
+            <img src="./Smit.png" alt="SMIT Logo" height="200px" width="200px">
+        </div>
+        
+        <h1>STUDENT LOGIN FORM</h1>
+    </div>
+
+    <div class="login-container" >
+        <!-- Email section -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        </div>
+
+        <!-- Password section -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        </div>
+
+        <!--  submit aur reset buttons -->
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
 </body>
 </html>
