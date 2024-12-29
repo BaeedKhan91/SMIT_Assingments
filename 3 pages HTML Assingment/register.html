@@ -3,33 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
 </head>
 <body>
-    <a href="./index.html">
-        <img style="cursor: pointer;" src="./arrow icon.avif" width="80px" height="80px" alt="">
-    </a>
-    <div class="register">
-        <div>
-        <img src="./Smit.png" width="170px" height="170px" alt="">
+    <div class="header-section" style="text-align: center;">
+        <!-- ye back button hai -->
+<img src="./arrow icon.jpg" alt="">        
+        <!-- SMIT Logo -->
+        <div class="logo" >
+            <img src="" alt="SMIT Logo" height="200px" width="200px">
+        </div>
+        
+        <h1>STUDENT REGISTRATION FORM</h1>
     </div>
-        <br>
-        <div>
-        <h1>STUDENT REGISTERATION FORM</h1>
+
+    <div class="form-container">
+        <h1>Register</h1>
+
+        <!-- number section -->
+        <div class="mobile-number-section">
+            <label for="mobile">MOBILE NUMBER</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter the Mobile Number" maxlength="10">
+        </div>
+
+        <!-- gender section -->
+        <div class="gender-section">
+            <label>GENDER</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- address section -->
+        <div class="address-section">
+            <label for="address">ADDRESS</label>
+            <textarea id="address" name="address"></textarea>
+        </div>
+
+        <!-- city, pin code, state, aur country ka section-->
+        <div class="location-section">
+            <label for="city">CITY</label>
+            <input type="text" id="city" name="city" placeholder="Enter the City Name" maxlength="30">
+
+            <label for="pin-code">PIN CODE</label>
+            <input type="text" id="pin-code" name="pin-code" placeholder="Enter the Pin Code" maxlength="6">
+
+            <label for="state">STATE</label>
+            <input type="text" id="state" name="state" placeholder="Enter the State" maxlength="30">
+
+            <label for="country">COUNTRY</label>
+            <input type="text" id="country" name="country" placeholder="Enter the Country Name">
+        </div>
+
+        <!--  hobbies Section-->
+        <div class="hobbies-section">
+            <label>HOBBIES</label>
+            <input type="checkbox" id="drawing" name="hobbies" value="drawing">
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" id="singing" name="hobbies" value="singing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" id="sketching" name="hobbies" value="sketching">
+            <label for="sketching">Sketching</label>
+            <label for="others">Others</label>
+            <input type="text" id="others" name="hobbies">
+        </div>
+
+        <!--  qualification Section-->
+        <div class="qualification-section">
+            <label>QUALIFICATION</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl.No.</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td><input type="text" name="class10-board" maxlength="10"></td>
+                        <td><input type="text" name="class10-percentage" maxlength="5"></td>
+                        <td><input type="text" name="class10-year" maxlength="4"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text" name="class12-board" maxlength="10"></td>
+                        <td><input type="text" name="class12-percentage" maxlength="5"></td>
+                        <td><input type="text" name="class12-year" maxlength="4"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" name="graduation-board" maxlength="10"></td>
+                        <td><input type="text" name="graduation-percentage" maxlength="5"></td>
+                        <td><input type="text" name="graduation-year" maxlength="4"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text" name="masters-board" maxlength="10"></td>
+                        <td><input type="text" name="masters-percentage" maxlength="5"></td>
+                        <td><input type="text" name="masters-year" maxlength="4"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--  courses applied wala Section -->
+        <div class="courses-section">
+            <label for="courses">COURSES APPLIED FOR</label>
+            <select id="courses" name="courses">
+                <option value="">Select any course</option>
+            </select>
+        </div>
+
+        <!--  file upload Section-->
+        <div class="file-upload-section">
+            <label for="upload">Upload your pic (only .png, .jpg, .jpeg formats allow)</label>
+            <input type="file" id="upload" name="upload" accept=".png, .jpg, .jpeg">
+        </div>
+
+        <!-- Submit aur Reset buttons -->
+        <div class="buttons-section">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
     </div>
-<div class="rg-form">
-        <label for="">FIRST NAME</label>
-        <input type="text" placeholder="Enter First Name" name="first-name">
-        (max 30 characters a-z and A-Z)
-        <br>
-        <label for="">LAST NAME</label>
-        <input type="text" placeholder="Enter last Name" name="last-name">
-        (max 30 characters a-z and A-Z)
-        <br>
-        <label for="">DATE OF BIRTH</label>
-        <input type="month" name="dob">
-    </div>
-    </div>
-    </body>
+</body>
 </html>
