@@ -4,74 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<!--
+    {
+     "Name":"Baeed",
+     "Roll Num":"343045"  
+    }
+-->
 <body>
+    <a href="./index.html">
+        <img src="./arrow icon.jpg" alt="" height="50px" width="50px"> 
+     </a>      
     <div class="header-section" >
-        <!-- ye back button hai --> <a href="./index.html">
-            <img src="./arrow icon.jpg" alt="">  </a>      
-        <!-- SMIT Logo -->
-        <div class="logo" >
-            <img src="" alt="SMIT Logo" height="200px" width="200px">
-        </div>
+       
+       
+            <img src="./Smit.png" alt="SMIT Logo" height="180px" width="180px">
         
-        <h1>STUDENT REGISTRATION FORM</h1>
+        
+        <h2>STUDENT REGISTRATION FORM</h2>
     </div>
-
+    <form>
     <div class="form-container">
-        <h1>Register</h1>
+        
 
-        <!-- number section -->
+       <div class="first-name">
+        <label for="">FIRSTNAME</label>
+        <input type="text" name="f-name" placeholder="Enter First Name" maxlength="30"> (max 30 characters a-z and A-Z)
+
+       </div>
+       <div class="l-name">
+        <label for="">LASTNAME</label>
+        <input type="text" name="l-name" placeholder="Enter Your Last Name" maxlength="30"> (max 30 characters a-z and A-Z)
+       </div>
         <div class="mobile-number-section">
             <label for="mobile">MOBILE NUMBER</label>
-            <input type="text" id="mobile" name="mobile" placeholder="Enter the Mobile Number" maxlength="10">
+            <input type="text" name="mobile" placeholder="Enter the Mobile Number" maxlength="10">(10 Digits Numbers)
         </div>
 
-        <!-- gender section -->
         <div class="gender-section">
             <label>GENDER</label>
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" name="gender" value="male" id="male">
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" name="gender" value="female">
             <label for="female">Female</label>
         </div>
 
-        <!-- address section -->
         <div class="address-section">
             <label for="address">ADDRESS</label>
-            <textarea id="address" name="address"></textarea>
+            <textarea  name="address"></textarea>
         </div>
 
-        <!-- city, pin code, state, aur country ka section-->
-        <div class="location-section">
+       
             <label for="city">CITY</label>
-            <input type="text" id="city" name="city" placeholder="Enter the City Name" maxlength="30">
+            <input type="text" me="city" placeholder="Enter the City Name" maxlength="30"> (max 30 characters a-z and A-Z)
 
             <label for="pin-code">PIN CODE</label>
-            <input type="text" id="pin-code" name="pin-code" placeholder="Enter the Pin Code" maxlength="6">
+            <input type="number"  name="pin-code" placeholder="Enter the Pin Code" maxlength="6">(6 Digits Numbers)
 
             <label for="state">STATE</label>
-            <input type="text" id="state" name="state" placeholder="Enter the State" maxlength="30">
+            <input type="text" name="state" placeholder="Enter the State" maxlength="30"> (max 30 characters a-z and A-Z)
 
             <label for="country">COUNTRY</label>
-            <input type="text" id="country" name="country" placeholder="Enter the Country Name">
-        </div>
+            <input type="text"  name="country" placeholder="Enter the Country Name">
+        
 
-        <!--  hobbies Section-->
         <div class="hobbies-section">
             <label>HOBBIES</label>
-            <input type="checkbox" id="drawing" name="hobbies" value="drawing">
+            <input type="checkbox"  name="hobbies" value="drawing">
             <label for="drawing">Drawing</label>
-            <input type="checkbox" id="singing" name="hobbies" value="singing">
+            <input type="checkbox"  name="hobbies" value="singing">
             <label for="singing">Singing</label>
-            <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+            <input type="checkbox"  name="hobbies" value="dancing">
             <label for="dancing">Dancing</label>
-            <input type="checkbox" id="sketching" name="hobbies" value="sketching">
+            <input type="checkbox"  name="hobbies" value="sketching">
             <label for="sketching">Sketching</label>
             <label for="others">Others</label>
-            <input type="text" id="others" name="hobbies">
+            <input type="text" name="hobbies">
         </div>
 
-        <!--  qualification Section-->
         <div class="qualification-section">
             <label>QUALIFICATION</label>
             <table>
@@ -117,25 +128,23 @@
             </table>
         </div>
 
-        <!--  courses applied wala Section -->
         <div class="courses-section">
             <label for="courses">COURSES APPLIED FOR</label>
-            <select id="courses" name="courses">
+            <select  name="courses">
                 <option value="">Select any course</option>
             </select>
         </div>
 
-        <!--  file upload Section-->
         <div class="file-upload-section">
             <label for="upload">Upload your pic (only .png, .jpg, .jpeg formats allow)</label>
-            <input type="file" id="upload" name="upload" accept=".png, .jpg, .jpeg">
+            <input type="file" name="upload" accept=".png, .jpg, .jpeg">
         </div>
 
-        <!-- Submit aur Reset buttons -->
         <div class="buttons-section">
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
         </div>
     </div>
+</form>
 </body>
 </html>
