@@ -1,36 +1,50 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login Form</title>
+    <link rel="stylesheet" href="style.css">
+<!-- 
+  Name: "Baeed Khan"
+  Roll: "343045" 
+-->
 </head>
+
 <body>
-    <div class="header-section">
-          <a href="./index.html">  <img src="./arrow icon.jpg" alt="">  </a>          
-        <div class="logo-container" >
-            <!-- SMIT logo  -->
-            <img src="./Smit.png" alt="SMIT Logo" height="200px" width="200px">
-        </div>
-        
-        <h1>STUDENT LOGIN FORM</h1>
-    </div>
+    <a href="./index.html">
+        <img src="./arrow icon.jpg" alt="" height="60px" width="60px" style="margin: 5px;"> </a>
+    <div class="login-main">
 
-    <div class="login-container" >
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        <div class="register-head">
+            <img src="./Smit.png" alt="smit-logo" class="smit-logo" >
+            <h2>STUDENT LOGIN FORM</h2>
         </div>
 
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        <form>
+        <div class="login-container">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required style="margin-left: 1.5%;">
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <br>
+            <div class="button-group">
+               <input type="submit">
+               <input type="reset">
+            </div>
         </div>
-
-        <div class="button-group">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
+    </form>
     </div>
 </body>
+
 </html>
