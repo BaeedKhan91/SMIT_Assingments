@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: mainPage;
+    animation-duration: 1s;
+}
+
+
+:root{
+    --primary-color: #191A23;
+    --secondary-color: #B9FF66;
+    --third-color: #F3F3F3;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-img{
+    width: 50%;
+    margin-left: 5%;
+}
+.nav-items{
+    display: flex;
+    gap: 25px;
+    width: 50%;
+    /* animation: infinite; */
+    /* margin-left: 10%; */
+}
+.nav-items p{
+    
+    margin-top: 15px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-items p:hover{
+    transform: scale(1.1);
+    color: var(--secondary-color);
+
+}
+.nav-btn{
+
+    padding: 0 30px;
+    margin-left: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.nav-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    animation: btn 1.5s  ;
+    border: none;
+}
+@keyframes btn {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.hero{
+    display: flex;
+    height: 550px;
+    /* align-items: center; */
+}
+.hero-text{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+.hero h1{
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 500;
+}
+.hero p{
+    font-size: 18px;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+.hero-img{
+    width: 60%;
+    margin: 5%;
+    
+    /* filter: grayscale(100%);
+    transition: all 0.4s ease-in-out; */
+}
+/* .hero-img:hover{
+    filter: grayscale(0);
+} */
+.hero-text button{
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ;
+}
+.hero-text button:hover{
+    animation: btn 1.5s;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.footer img{
+    height: 100px;
+    width: 120px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.footer img:hover{
+    filter: grayscale(0%);
+}
+
+.mt{
+    margin-top: 15px;
+}
+
+
+@keyframes mainPage {
+    0%{
+        opacity: 0.2;
+    }
+
+    40%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
