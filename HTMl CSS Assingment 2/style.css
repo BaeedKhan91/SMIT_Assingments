@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Outfit:wght@100..900&family=Prata&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 600px;
+    background-color: #222329;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+.nav-left{
+    font-family: Martel Sans sans-serif;
+    color: white;
+    font-size: 18px;
+    font-style:italic ;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.nav-items{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 30px;
+}
+.nav-items p{
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-items button{
+    padding: 1px 6px;
+    margin-top: -5px;
+    font-size: 12px;
+    background-color: #222329;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+.hero-sub{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.hero-sub p{
+    color: white;
+    font-size: 19px;
+    font-weight: 300;
+}
+.hero-sub h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+.hero-sub button{
+    width: 23%;
+    padding: 15px 0px;
+    align-self: center;
+    background-color: #ff4141;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
