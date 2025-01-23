@@ -32,7 +32,7 @@ body{
     justify-content: space-between;
 }
 .nav-left{
-    color: white;
+    color: var(--light-color);
     font-size: 18px;
     font-style:italic ;
     letter-spacing: 2px;
@@ -44,7 +44,7 @@ body{
     gap: 30px;
 }
 .nav-items p{
-    color: #fff;
+    color: var(--light-color);
     font-size: 14px;
     cursor: pointer;
 }
@@ -52,9 +52,9 @@ body{
     padding: 1px 6px;
     margin-top: -5px;
     font-size: 12px;
-    background-color: #222329;
-    border-color: white;
-    color: white;
+    background-color: var(--dark-color);
+    border-color: var(--light-color);
+    color: var(--light-color);
     cursor: pointer;
 }
 
@@ -73,12 +73,12 @@ body{
 }
 
 .hero-sub p{
-    color: white;
+    color: var(--light-color);
     font-size: 19px;
     font-weight: 300;
 }
 .hero-sub h1{
-    color: #fff;
+    color: var(--light-color);
     font-size: 45px;
 }
 .hero-sub button{
@@ -88,7 +88,7 @@ body{
     background-color: #ff4141;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--light-color);
     font-weight: 600;
     cursor: pointer;
 }
