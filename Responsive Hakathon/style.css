@@ -13,6 +13,7 @@ body{
 
 .main-container{
     display: flex;
+    align-items: center;
     /* background-color: aqua; */
     height: 80%;
     width: 70%;
@@ -81,6 +82,7 @@ body{
     font-size: 13px;
     font-weight: 700;
     color: white;
+    cursor: pointer;
 }
 .buttons{
     display: flex;
@@ -96,6 +98,7 @@ body{
     font-weight: 500;
     padding: 2px 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .image-container{
   
