@@ -1,0 +1,118 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    /* background-color: aqua; */
+    height: 80%;
+    width: 70%;
+    background-color: rgb(219, 215, 210);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.login-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    /* padding: 0px 202px; */
+    width: 50%;
+}
+.login-sub{
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    width: 404px;
+    height: 90%;
+}
+.login-sub h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.login-sub form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-sub form input{
+    /* width: 100%;
+    font-size: 10px;
+    border-radius: 15px; */
+    padding: 15px;
+    /* height: 25px; */
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.login-sub form label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.input-checkbox{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 6px;
+}
+.input-checkbox label{
+    font-size: 10px !important;
+    font-weight: 500 !important;
+}
+.login-sub form button{
+    padding: 8px 0px;
+    background-color: #3A5B22;
+    border-radius: 10px;
+    border: none   ;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+.buttons{
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+
+}
+.buttons button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 20px;
+    border-radius: 10px;
+}
+.image-container{
+  
+    width: 50%;
+}
+
+
+@media screen and (max-width: 895px) {
+    .buttons button{
+        padding: 2px 5px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .image-container{
+        display: none;
+    }
+    .login-main{
+        width: 100%;
+    }
+}
